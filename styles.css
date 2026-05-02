@@ -42,6 +42,28 @@
     letter-spacing: 1px;
   }
 
+  .nav-logo a {
+    font-weight: bold;
+    transition: transform 0.4s, ease;
+    display: inline-block;
+    color: var(--accent2);
+  }
+
+  .nav-logo a:hover {
+    color: var(--accent);
+    transform: translateY(-4px);
+  }
+
+  .nav-logo a:active {
+    transform: translateY(-3px);
+    color: var(--accent);
+  }
+
+  .nav-logo-link {
+    color: var(--accent2);
+    text-decoration: none;
+  }
+
   .nav-links {
     display: flex;
     gap: 2rem;
@@ -240,6 +262,7 @@
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    margin-bottom: 2.5rem;
   }
 
   .proyectos-grid {
@@ -253,7 +276,7 @@
   }
 
   .proyecto-info {
-    background: var(--navy-light);
+    background: transparent;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -280,6 +303,7 @@
     gap: .6rem;
     overflow: hidden;
     flex: 1;
+    margin-top: 2.5rem;
   }
 
   .proyecto-imgs img {
@@ -288,6 +312,7 @@
     object-fit: cover;
     border-radius: 10px;
     display: block;
+    gap: 0.4rem;
   }
 
   .proyecto-imgs .img-placeholder {
@@ -433,14 +458,18 @@
   .acerca-img-placeholder .big-icon { font-size: 3rem; }
 
   /* ─── CONTACTO ─── */
-  #contacto { background: var(--navy); }
+  #contacto { 
+    background: var(--navy);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
   .contacto-content { text-align: center; }
 
   .contacto-content .contact-title {
     font-size: 1.2rem;
     color: var(--gray-light);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
   }
 
@@ -449,7 +478,7 @@
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .social-link {
@@ -488,12 +517,12 @@
     background: var(--navy-light);
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1rem;
     display: inline-flex;
     flex-direction: column;
     gap: 0.8rem;
     min-width: 280px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .contact-info-block .info-row {
@@ -547,7 +576,7 @@
   /* ─── FOOTER ─── */
   footer {
     background: #060e1a;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.06);
   }
@@ -555,7 +584,7 @@
   footer p {
     color: var(--text-muted);
     font-size: 0.85rem;
-    line-height: 1.8;
+    line-height: 1.4;
   }
 
   footer .footer-brand {
